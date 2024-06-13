@@ -1,0 +1,142 @@
+1. 3
+
+2. 4
+
+3. 4
+
+4. 3
+
+5. 1
+
+6. 4
+
+7. 2
+
+8. 2
+
+9. 2
+
+10. 4
+
+13. public class Member {
+	private String name;
+	private String id;
+	private STring password;
+	private int age;
+}
+
+14. public class Member {
+	private String name;
+	private String id;
+	private String password;
+	private int age;
+
+	Member(String name, String id) {
+		this.name = name;
+		this.id = id;
+	}
+}
+
+15. public class MemberService {
+	
+	public boolean login(String id, String password) {
+		if (id.equals("hong") && password.equals("12345")) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
+	public void logout(String id) {
+		System.out.println(id+"님이 로그아웃 되었습니다");
+	}
+}
+
+
+16. public class PrinterExample {
+    public static void main(String[] args) {
+        Printer printer = new Printer();
+        printer.println(10);
+        printer.println(true);
+        printer.println(5.7);
+        printer.println("홍길동");
+    }
+
+    static class Printer {
+        void println(int x) {
+            System.out.println(x);
+        }
+
+        void println(boolean x) {
+            System.out.println(x);
+        }
+
+        void println(double x) {
+            System.out.println(x);
+        }
+
+        void println(String x) {
+            System.out.println(x);
+        }
+    }
+}
+
+17. public class PrinterExample2 {
+    public static void main(String[] args){
+        Printer.println(10);
+        Printer.println(true);
+        Printer.println(5.7);
+        Printer.println("홍길동");
+    }
+
+    public class Printer {
+        public static void println(int x){
+            System.out.println(x);
+        }
+
+        public static void println(boolean x){
+            System.out.println(x);
+        }
+
+        public static void println(double x){
+            System.out.println(x);
+        }
+
+        public static void println(String x){
+            System.out.println(x);
+        }
+    }
+}
+
+
+18. public class ShopService {
+
+    private static ShopService singleton = new ShopService();
+
+    private ShopService(){}
+
+    public static ShopService getInstance() {
+        return singleton;
+    }
+}
+
+
+
+19. public class Account {
+
+
+    private int balance;
+
+    private static final int MIN_BALANCE = 0;
+    private static final int MAX_BALANCE = 1000000;
+    public void setBalance(int balance) {
+        if (balance < MIN_BALANCE || balance > MAX_BALANCE) {
+            return;
+        }
+        this.balance=balance;
+    }
+    public int getBalance(){
+        return balance;
+    }
+}
