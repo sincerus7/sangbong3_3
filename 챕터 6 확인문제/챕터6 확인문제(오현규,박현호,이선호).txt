@@ -18,10 +18,15 @@
 
 10. 4
 
+11. 3
+
+12. 필드, 생성자, 메소드
+
+
 13. public class Member {
 	private String name;
 	private String id;
-	private STring password;
+	private String password;
 	private int age;
 }
 
