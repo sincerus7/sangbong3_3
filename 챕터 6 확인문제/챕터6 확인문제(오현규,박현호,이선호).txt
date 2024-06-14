@@ -68,7 +68,7 @@
         printer.println("홍길동");
     }
 
-    static class Printer {
+     public class Printer {
         void println(int x) {
             System.out.println(x);
         }
