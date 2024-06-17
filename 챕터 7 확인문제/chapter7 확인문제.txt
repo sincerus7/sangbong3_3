@@ -8,12 +8,13 @@
 -->해결방법 : 부모클래스에 기본생성자를 추가해주거나,
  자식클래스의 생성자에서 부모생성자호출
 7.  
- 1) Parent(String nation)
- 2) Parent()
- 3) Child(String name)
- 4) Child()
-8.  SnowTire클래스가 오버라이딩한 run() 메소드 2번 실행
+ 1) Parent(String nation) call
+ 2) Parent() call
+ 3) Child(String name) call
+ 4) Child() call
+8.  스노우 타이어가 굴러갑니다.
+    스노우 타이어가 굴러갑니다.
 9.  2
 10.  Machine클래스가 선언한 추상메소드를 자식클래스에서 구현하지 않아서
 11.  super
-12.  a instanceof C
+12.  a instanceof C c
